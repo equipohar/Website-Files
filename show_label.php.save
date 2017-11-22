@@ -1,0 +1,17 @@
+?>
+<?php 
+$connect = mysqli_connect("localhost", "root", "equipohar123", "testing_har");
+$query = ("SELECT * FROM teting_data WHERE id =(SELECT MAX(id) FROM testin_data)"); 
+$result = mysqli_query($connect, $query);
+$row = mysqli_fetch_array($result);
+echo $row['labelRF'];
+?>
+?>
+<?php 
+$connect = mysqli_connect("localhost", "root", "equipohar123", "testing_har");
+$query = ("SELECT * FROM teting_data WHERE id =(SELECT MAX(id) FROM testin_data)"); 
+$result = mysqli_query($connect, $query);
+$row = mysqli_fetch_array($result);
+echo $row['labelRF'];
+?>
+
